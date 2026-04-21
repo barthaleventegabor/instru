@@ -1,0 +1,24 @@
+<h1>Hangszer hozzáadása</h1>
+<form id="instrmentform" [formGroup]="instrumentForm" (ngSubmit)="save()">
+    <div class="form-group">
+        <label for="instrument">Név</label>
+        <input type="text" class="form-control" id="instrument" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="type">Típus</label>
+        <input type="text" class="form-control" id="type" formControlName="type">
+    </div>
+    <div class="form-group">
+        <label for="item_number">Cikkszám</label>
+        <input type="text" class="form-control" id="item_number" formControlName="item_number">
+    </div>
+    <div class="form-group">
+        <label for="price">Ár</label>
+        <input type="number" class="form-control" id="price" formControlName="price">
+    </div>
+    <div class="form-group">
+        <label for="category">Kategória</label>
+        <input type="text" class="form-control" id="category" formControlName="category">
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Mentés</button>
+</form>
